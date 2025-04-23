@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        StudentDAO dao = new StudentDAO();
+        Student stu = new Student();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -20,19 +20,19 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    dao.addStudent();
+                    stu.addStudent();
                     break;
                 case 2:
-                    dao.viewStudents();
+                    stu.viewStudents();
                     break;
                 case 3:
-                    dao.updateStudent();
+                    stu.updateStudent();
                     break;
                 case 4:
-                    dao.deleteStudent();
+                    stu.deleteStudent();
                     break;
                 case 5:
-                    dao.close();
+                    stu.close();
                     System.out.println("Goodbye!");
                     return;
                 default:
