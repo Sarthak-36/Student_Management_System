@@ -3,11 +3,11 @@ package StudentManagementSystem;
 import java.sql.*;
 import java.util.Scanner;
 
-public class StudentDAO {
+public class Student {
     private Connection con;
     private Scanner scanner;
 
-    public StudentDAO() {
+    public Student() {
         try {
             con = DBConnection.getConnection();
             scanner = new Scanner(System.in);
